@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20240925125747_Inicial.cs" />
+    <Compile Remove="Migrations\20240925125747_Inicial.Designer.cs" />
+    <Compile Remove="Migrations\20240925135104_AddUserTable.cs" />
+    <Compile Remove="Migrations\20240925135104_AddUserTable.Designer.cs" />
+    <Compile Remove="Migrations\20240925160520_admin.cs" />
+    <Compile Remove="Migrations\20240925160520_admin.Designer.cs" />
+    <Compile Remove="Migrations\20240925160908_2.cs" />
+    <Compile Remove="Migrations\20240925160908_2.Designer.cs" />
+    <Compile Remove="Migrations\ProductDbContextModelSnapshot.cs" />
+    <Compile Remove="Views\Account\login.cshtml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+    <Folder Include="Views\Account\" />
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+</Project>

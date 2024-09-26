@@ -1,0 +1,624 @@
+/* font importing */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* reseting css rules */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --white: #ffffff;
+    --orange: #f78b00;
+    --darkblue: #00285f;
+    --lightblue: #00c4ff;
+    --gray: #ededed;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 650px;
+    background: var(--lightblue);
+}
+
+.content {
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+nav {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    nav img {
+        width: 23%;
+        position: relative;
+        top: -13px;
+        left: -327px;
+        display: flex;
+        z-index: 0;
+    }
+
+.brand {
+    font-size: 24px;
+    color: var(--darkblue);
+    cursor: pointer;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+    nav ul li {
+        list-style: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+        nav ul li a {
+            color: var(--darkblue);
+            text-decoration: none;
+        }
+
+            nav ul li a:hover {
+                color: #00285f83;
+            }
+
+    nav ul button {
+        border: 1px solid var(--darkblue);
+        background: transparent;
+        padding: 8px 40px;
+        cursor: pointer;
+        margin-left: 30px;
+        color: var(--darkblue);
+        font-weight: bold;
+        border-radius: 4px;
+    }
+
+        nav ul button:hover {
+            transition: background, color 0.6s;
+            background: var(--darkblue);
+            color: var(--gray);
+        }
+
+.content .header-block {
+    max-width: 1000px;
+    min-width: 300px;
+    height: 450px;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 10;
+    padding: 10px;
+}
+
+/* configura a posição da imagem */
+.header-block img {
+    width: 40%;
+    position: absolute;
+    right: 8%;
+    bottom: 7%;
+    transform: translateX(20px);
+    transition: transform 2.5s;
+}
+
+.header-block .text {
+    position: absolute;
+    text-align: center;
+    bottom: 40%;
+    left: 7%;
+}
+
+    .header-block .text h2 {
+        color: var(--darkblue);
+        margin-bottom: 20px;
+        text-align: center;
+        transform: translateX(-20px);
+        transition: transform 1.5s;
+    }
+
+    .header-block .text p {
+        max-width: 380px;
+        color: var(--darkblue);
+        text-align: center;
+        transform: translateX(-20px);
+        transition: transform 1.5s;
+    }
+
+/* Catalog */
+
+section .catalog {
+    width: 100vw;
+    padding: 100px;
+}
+
+section .filter-card {
+    width: 980px;
+    height: 150px;
+    background-color: var(--gray);
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-input {
+    width: 700px;
+    height: 40px;
+    border: none;
+    border-radius: 4px 0px 0px 4pxs;
+    text-indent: 10px;
+}
+
+.search-button {
+    width: 150px;
+    height: 40px;
+    border-radius: 0px 4px 4px 0px;
+    border: none;
+    background: var(--darkblue);
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: 0.4s ease;
+}
+
+    .search-button:hover {
+        background: var(--gray);
+        color: var(var(--darkblue));
+    }
+
+.login-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: -100px auto;
+}
+
+    .login-form h3 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 1.5em;
+        color: #333;
+    }
+
+    .login-form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #555;
+    }
+
+    .login-form input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+        box-sizing: border-box;
+    }
+
+    .login-form button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+    }
+
+        .login-form button:hover {
+            background-color: #0056b3;
+        }
+
+.title-wrapper-catalog {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+section .card-wrapper {
+    max-width: 1000px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(270px,1fr));
+    grid-gap: 30px;
+    padding: 50px;
+}
+
+section .card-item {
+    height: 500px;
+    background-color: var(--gray);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-content {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-item img {
+    width: 85%;
+}
+
+.card-item h4 {
+    width: 90%;
+}
+
+.card-item p {
+    width: 90%;
+    text-align: center;
+}
+
+.card-item button {
+    width: 90%;
+    padding: 15px 0px;
+    border: none;
+    background: var(--darkblue);
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 10px;
+}
+
+    .card-item button:hover {
+        background: var(--lightblue);
+        color: var(--darkblue);
+    }
+
+.card-content .edit-btn,
+.card-content .delete-btn {
+    width: 45%; /* Ajusta o tamanho dos botões para caberem lado a lado */
+    padding: 8px;
+    font-size: 0.9em;
+    background-color: var(--darkblue);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.card-content .delete-btn {
+    background-color: #d9534f; /* Cor vermelha para o botão de remover */
+}
+
+    .card-content .delete-btn:hover {
+        background-color: #c9302c; /* Cor mais escura no hover */
+    }
+
+/* About */
+
+.about {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10px;
+}
+
+.about-content {
+    max-width: 1000px;
+    min-width: 300px;
+    height: 600px;
+    background: #dedede3b;
+    margin: 0 auto;
+    border-radius: 8px;
+    z-index: 10;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    width: 25%;
+    min-width: 300px;
+    height: 100%;
+    background: #000000a1;
+    border-radius: 8px;
+}
+
+    .left img {
+        width: 100%;
+    }
+
+.right {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 10%;
+}
+
+    .right h3 {
+        text-align: right;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .right p {
+        max-width: 90%;
+        font: 1em;
+        letter-spacing: 2px;
+        text-align: right;
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 250px;
+}
+
+    footer .main {
+        width: 100%;
+        height: 200px;
+        background: var(--lightblue);
+        padding: 20px 10px;
+    }
+
+.footer-links {
+    max-width: 1000px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer-company,
+.footer-services,
+.footer-contact,
+.footer-social {
+    color: white;
+    height: 100%;
+    min-height: 100px;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin-bottom: 8px;
+}
+
+.main .footer-social img {
+    width: 32px;
+    height: 32px;
+}
+
+footer .last {
+    width: 100%;
+    height: 50px;
+    background: var(--blue);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 576px) {
+    nav ul li {
+        display: none;
+    }
+
+    .header-block img {
+        width: 70%;
+        position: absolute;
+        right: 16%;
+        top: 30%;
+    }
+
+    .header-block .text {
+        position: absolute;
+        bottom: 10%;
+        left: 15;
+    }
+
+    section .filter-card {
+        width: 390px;
+        padding: 0px 10px;
+    }
+
+    .search-input {
+        max-width: 700px;
+        min-width: 240px;
+    }
+
+    .search-button {
+        max-width: 150px;
+        min-width: 80px;
+    }
+
+    .about {
+        margin-top: 100px;
+    }
+
+    .title-wrapper-about {
+        margin-bottom: 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .right {
+        width: 90%;
+    }
+
+        .right p {
+            width: 100%;
+            margin: 0px;
+            text-align: left;
+        }
+
+    .features {
+        height: 100%;
+    }
+
+    .feature-card-block {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        height: 100%;
+    }
+
+        footer .main {
+            height: 100%;
+        }
+
+    .footer-links {
+        flex-direction: column;
+        padding-left: 10%;
+    }
+}
+
+/* Estilos para o Modal */
+.modal {
+    display: none; /* O modal começa oculto */
+    position: fixed;
+    z-index: 100; /* Coloca o modal acima de todos os outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8); /* Fundo preto semi-transparente */
+    justify-content: center; /* Centraliza o modal horizontalmente */
+    align-items: center; /* Centraliza o modal verticalmente */
+}
+
+    /* Quando o modal tiver a classe 'show', ele aparecerá */
+    .modal.show {
+        display: flex;
+    }
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque ao modal */
+    animation: fadeIn 0.5s; /* Animação para uma entrada mais suave */
+}
+
+/* Elementos modal */
+
+.close {
+    color: var(--darkblue);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    .close:hover {
+        color: var(--lightblue);
+    }
+
+#serviceForm label {
+    display: block;
+    margin-top: 10px;
+}
+
+#serviceForm input[type="text"],
+#serviceForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+}
+
+#serviceForm input[type="file"] {
+    margin-top: 5px;
+}
+
+#saveServiceBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--darkblue);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    #saveServiceBtn:hover {
+        background-color: var(--lightblue);
+    }
+
+.add-service-btn {
+    background-color: var(--darkblue);
+    color: var(--white);
+    padding: 12px 24px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+    .add-service-btn:hover {
+        background-color: var(--lightblue);
+        transform: scale(1.05);
+    }
+
+    .add-service-btn:active {
+        transform: scale(0.98);
+    }

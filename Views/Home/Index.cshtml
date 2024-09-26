@@ -1,0 +1,185 @@
+﻿@{
+    ViewData["Title"] = "Catalogo";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <link rel="stylesheet" href="~/css/style.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="content">
+            <nav>
+                <p class="brand">web<strong>Hosting</strong></p>
+                <img src="images/cloud.png" alt="cloud">
+                <ul>
+                    <li><a href="#catalog">Serviços</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <a href="Home/login"><button>Login</button></a>
+                </ul>
+            </nav>
+            <div class="header-block">
+                <div class="text">
+                    <h2>A melhor opção de hosting do mercado!</h2>
+                    <p>Escolha entre os nossos diversos planos, e construa seu site com confiança e qualidade!</p>
+                </div>
+                <img src="images/server2.png" alt="serverheader">
+            </div>
+        </div>
+    </header>
+    <section class="catalog" id="catalog">
+        <div class="content">
+            <div class="title-wrapper-catalog">
+                <button id="addServiceBtn" class="add-service-btn">Adicionar Serviço</button>
+            </div>
+            <div class="filter-card">
+                <input type="text"
+                       class="search-input"
+                       placeholder="Busque seu serviço" />
+                <button class="search-button">Buscar</button>
+            </div>
+            <div class="card-wrapper">
+                <div class="card-item">
+                    <img src="images/hosting.png" alt="server1">
+                    <div class="card-content">
+                        <h3>Hospedagem simples</h3>
+                        <p>Para você começar seu projeto!</p>
+                        <button type="button" class="buy-btn">Adquira já</button>
+                        <button type="button" class="edit-btn">Editar</button>
+                        <button type="button" class="delete-btn">Remover</button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="images/hosting.png" alt="server1">
+                    <div class="card-content">
+                        <h3>Hospedagem plus</h3>
+                        <p>Mais recursos e velocidade!</p>
+                        <button type="button" class="buy-btn">Adquira já</button>
+                        <button type="button" class="edit-btn">Editar</button>
+                        <button type="button" class="delete-btn">Remover</button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="images/hosting.png" alt="server1">
+                    <div class="card-content">
+                        <h3>Hospedagem premium</h3>
+                        <p>Recursos, IA, muita velocidade e dominio gratuito</p>
+                        <button type="button" class="buy-btn">Adquira já</button>
+                        <button type="button" class="edit-btn">Editar</button>
+                        <button type="button" class="delete-btn">Remover</button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="images/premium.webp" alt="server1">
+                    <div class="card-content">
+                        <h3>Hospedagem Business</h3>
+                        <p>Todas as ferramentas para seu negócio</p>
+                        <button type="button" class="buy-btn">Adquira já</button>
+                        <button type="button" class="edit-btn">Editar</button>
+                        <button type="button" class="delete-btn">Remover</button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="images/dedicated.png" alt="server1">
+                    <div class="card-content">
+                        <h3>Servidor dedicado</h3>
+                        <p>Um servidor dedicado para você ter total controle!</p>
+                        <button type="button" class="buy-btn">Adquira já</button>
+                        <button type="button" class="edit-btn">Editar</button>
+                        <button type="button" class="delete-btn">Remover</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <section class="about" id="about">
+            <div class="content">
+                <div class="title-wrapper-about">
+                    <p>Nossa história</p>
+                    <h3>Sobre</h3>
+                </div>
+                <div class="about-content">
+                    <div class="left">
+                        <img src="images/about.png" alt="About">
+                    </div>
+                    <div class="right">
+                        <h3>Qualidade e segurança</h3>
+                        <p>
+                            Na WebHosting, acreditamos que a internet é um terreno fértil onde ideias ganham vida e negócios florescem. Somos mais do que apenas uma empresa de hospedagem de sites: somos o seu parceiro digital, dedicados a transformar a sua presença online em algo extraordinário.
+
+                            Desde o nosso início, temos um objetivo claro: fornecer soluções de hospedagem seguras, confiáveis e rápidas para empreendedores, desenvolvedores e criadores de conteúdo de todos os tamanhos. Sabemos que o sucesso online começa com uma base sólida, e é por isso que oferecemos tecnologia de ponta, suporte 24/7 e uma infraestrutura robusta, pronta para atender desde blogs pessoais até grandes lojas online.
+
+                            Nosso time é apaixonado por inovação e comprometido em proporcionar a melhor experiência possível para nossos clientes. Valorizamos a simplicidade — tanto em nossos planos acessíveis quanto em nosso painel intuitivo — e acreditamos que você merece focar no que realmente importa: expandir seus projetos.
+
+                            Com a WebHosting, seu site sempre estará online, seguro e pronto para crescer. Se você busca flexibilidade, desempenho e suporte especializado, estamos aqui para levar a sua visão para o próximo nível.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <div class="main">
+            <div class="content footer-links">
+                <div class="footer-company">
+                    <h4>webHosting</h4>
+                    <h6>Sobre</h6>
+                    <h6>Contatio</h6>
+                </div>
+                <div class="footer-services">
+                    <h4>Hospedagem</h4>
+                    <h6>Servidores</h6>
+                    <h6>Dedicados</h6>
+                    <h6>Soluções</h6>
+                </div>
+                <div class="footer-social">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-icons">
+                        <img src="images/instagram.png" alt="Instagram" />
+                        <img src="images/facebook.png" alt="Facebook" />
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contate-nos</h4>
+                    <h6>+55 41 99999-9999</h6>
+                    <h6>contato@webhosting.com.br</h6>
+                    <h6>Nome da Rua, Curitiba PR</h6>
+                </div>
+            </div>
+        </div>
+        <div class="last">webHosting - Soluções de hospedagem</div>
+    </footer>
+
+    <!-- Modal para Adicionar/Editar Serviço -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Adicionar Serviço</h2>
+            <form id="serviceForm">
+                <label for="serviceName">Nome do Serviço:</label>
+                <input type="text" id="serviceName" name="serviceName" required>
+
+                <label for="serviceDescription">Descrição:</label>
+                <textarea id="serviceDescription" name="serviceDescription" required></textarea>
+
+                <label for="serviceImage">Imagem:</label>
+                <input type="file" id="serviceImage" name="serviceImage" accept="image/*">
+
+                <input type="hidden" id="serviceId">
+
+                <button type="submit" id="saveServiceBtn">Salvar</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
